@@ -86,7 +86,7 @@ CREATE TABLE product_audit (
 
 SP_ProductGetAllData  
 
-alter proc SP_ProductGetAllData
+create proc SP_ProductGetAllData
 @actiontype tinyint = 1,
 @id smallint =1 , @productname nvarchar(255)='' ,
 @price decimal(10,2)=0 , @quantity smallint = 0 ,@stock bit = 0
